@@ -16,7 +16,7 @@ public class PopUpMessageBehaviour : MonoBehaviour
     {
         text.color -= new Color(0, 0, 0, Time.deltaTime / 2);
 
-        text.transform.position += new Vector3(0,Time.deltaTime / 2,0);
+        text.transform.position += new Vector3(0,Time.deltaTime * 2,0);
 
         if (text.color.a <= 0)
             Destroy(gameObject);
